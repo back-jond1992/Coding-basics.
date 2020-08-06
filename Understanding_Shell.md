@@ -8,6 +8,7 @@
 - .. : parent directory.
 - ls -l(list-long): lists files in directory in detail.
 mkdir (make directory): creates new directory.
+- touch: makes file
 - * : all files
 - mv (move): move files from one directory to another. For example... mv my pictures/*jpeg my pictures/holiday_2020.
 - ; : allows for multiple commands in one line.
