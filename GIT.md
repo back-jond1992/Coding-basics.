@@ -13,13 +13,12 @@
 
 ## GIT Comamnds:
 
-- git innit: initialise GIT.
+- git init: initialise GIT.
 - git status: checks changes.
 - git add: saves directory to staging area.
 - git commit -m"..." 
 - git add .: add everything.
-
-
+- git push origin master.
 ## Other GIT Terminology
 
 - commit: snapshot/save point of a project.
