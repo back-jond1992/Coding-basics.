@@ -25,4 +25,26 @@ Anchor elements can also be used for internal links. 'href' attribute is assigne
 
 (** an id is an attribute that uniquely descries an element)
 
+'ul' elements create unordered lists, followed by any number of 'li' elements.
+
+'ol' elements create ordered lists, followed by any number of 'li' elements.
+
+'input' elements are an easy way to get input from users. "<input type="text">". Input elements are self closing. You can place holder text in the input put element with 'placeholder' attribute.
+
+'submit button'(s) send data from your form to the specified URL in the form's action attribute. 'action' attributes send data to a specified URL.
+
+'required' attribute requires specific forms to be completed before the user can go further.
+
+Radio buttons are used when only one answer can be selected out of multiple options. Radio buttons are a type of 'input' element and are nested inside 'label' elements.
+
+Checkboxes are another 'input' element and are used when questions may have more than one answer and are nested in 'label' elements.
+
+'div' element is a general purpose container for other elements.
+
+At the top of all docs the browser must be told what version of HTML is being used. This is done with <!DOCTYPE ...> (case sensitive). The rest of the code is then wrapped in 'html' tags.
+
+'head' and 'body' tags add more organisation in HTML documents. Any markup info goes inside the 'head' tag and markup content goes in the 'body' tag. 
+
+
+
 

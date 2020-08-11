@@ -15,7 +15,7 @@
 
 - git init: initialise GIT.
 - git status: checks changes.
-- git add: saves directory to staging area.
+- git add "..": saves directory to staging area.
 - git commit -m"..." 
 - git add .: add everything.
 - git push origin master.
