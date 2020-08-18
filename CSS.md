@@ -15,3 +15,13 @@ Classes are style which can be reused and added to HTML elements. In the CSS sty
 Font size is controlled by 'font-size' CSS property.
 
 Font is controlled by 'font-family' CSS property.
+
+Element width is controlled by the 'width' CSS property.
+
+CSS borders have 'style', 'color' and 'width' properties. CSS borders can also be rounded with the CCS property 'border-radius' (border-radius can be specified in pixels or %).
+
+Elements background colour is set with the CCS 'background-color' property.
+
+In addition to classes elements can be given 'id' attributes. ('id' attributes are not reusable and should only be applied tp one element).
+
+** note ** classes are referenced with a '.' and id's with a '#'.

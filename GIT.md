@@ -19,10 +19,11 @@
 - git commit -m"..." 
 - git add .: add everything.
 - git push origin master.
+
 ## Other GIT Terminology
 
 - commit: snapshot/save point of a project.
 - repository: directory which contains projects.
 - working directory: files in the local machine.
 - checkout: when files are taken from the depository to the working    directory.
-- stagining area: a file that stores information about what will go into the next commit.
+- staging area: a file that stores information about what will go into the next commit.
