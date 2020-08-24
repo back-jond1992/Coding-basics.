@@ -25,3 +25,9 @@ Elements background colour is set with the CCS 'background-color' property.
 In addition to classes elements can be given 'id' attributes. ('id' attributes are not reusable and should only be applied tp one element).
 
 ** note ** classes are referenced with a '.' and id's with a '#'.
+
+CSS properties 'padding', 'margin' and 'border' control the spaces around HTML elements:
+    -'padding' controls the amount of space between an elements content and its 'border'. With the 'padding' element all four sides of an element can be controlled (padding-top/right/left/bottom). These can be specified individually or all as one line.
+    -'margin' controls the amount of space between an elements 'border' and surrounding elements. Negative value makes the element grow larger. Same as the 'padding' element the 'margin' element controls all four sides of an element (margin-top/right/left/bottom). These can be specified individually or all as one line.
+
+'!important' CSS attribute is used to override all CCS declarations.

@@ -11,3 +11,4 @@
     .decorations
     .transitions
     
+-Pixel (px) type of length unit, which tell the browser how to size or space an item.
