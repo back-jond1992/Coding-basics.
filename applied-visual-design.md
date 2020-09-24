@@ -33,3 +33,7 @@
 
 -'text-transform' property is used to change appearance of text. Easy way to make text appearance consistently without having to change HTML.S
 
+-'font-weight' adjusts thickness of text.
+
+-'line-height' adjusts amount of space between lines in an element.
+
