@@ -31,9 +31,15 @@
 
 -'opacity' property is used to adjust opacity.
 
+-A pseudo class is a keyword that can be added to selectors to select a specific state of the element.
+
+-':hover' pseudo-class selector can change the hover state of a tag.
+
 -'text-transform' property is used to change appearance of text. Easy way to make text appearance consistently without having to change HTML.S
 
 -'font-weight' adjusts thickness of text.
 
 -'line-height' adjusts amount of space between lines in an element.
+
+-'position' css property specifies the type of positioning method used for an element.
 
