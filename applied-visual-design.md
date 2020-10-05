@@ -43,3 +43,5 @@
 
 -'position' css property specifies the type of positioning method used for an element.
 
+-'z-index' element can specify the order in which element are stacked when positioned to overlap. Higher number of 'z-index' are stacked higher than lower numbers.
+
