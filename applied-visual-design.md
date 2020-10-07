@@ -45,3 +45,8 @@
 
 -'z-index' element can specify the order in which element are stacked when positioned to overlap. Higher number of 'z-index' are stacked higher than lower numbers.
 
+-'transform' property has variety of functions. It can scale, move, rotate, skew etc, elements. 
+
+-'::before' and '::after' pseudo elements are used to add something before or after a selected element.
+
+-'animation' properties animate an element. The '@keyframes' controls what happens during the animation.
