@@ -12,3 +12,8 @@ Applied accessability ensures web content can be understood by all, regardless o
     .'div' groups any content.
     .'section' groups related content. 'section' tags can be used inside 'div' and 'article' tags.
     .'header' tags wrap introductory information or navigation links for it's parent tag. Wraps content that is repeated across the top of multiple pages.
+    -'nav' tags wrap around navigation links on a page.
+    -footer' tags wrap copyright information or links to related documents.
+    -'audio' tags wrap sound or audio stream content. Audio content needs a text alternative either as text on the page or links to transcripts.
+    -'figure' with 'figcaption' wrap visual representations (i.e pictures, diagrams etc.) and their captions.
+    -'fieldset' tags wrap radio buttons and often use a 'legend' tag to provide a description of the grouping.
