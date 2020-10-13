@@ -17,3 +17,6 @@ Applied accessability ensures web content can be understood by all, regardless o
     -'audio' tags wrap sound or audio stream content. Audio content needs a text alternative either as text on the page or links to transcripts.
     -'figure' with 'figcaption' wrap visual representations (i.e pictures, diagrams etc.) and their captions.
     -'fieldset' tags wrap radio buttons and often use a 'legend' tag to provide a description of the grouping.
+    -input type 'date' helps users understand the date format required in input fields.
+    -'time' element with it's 'datetime' attribute wrap a date or time or time on a page and states a standardised version of a time.
+    -'accesskey' attributes specify a shortcut key to active or bring focus to an element and make navigation more efficient for keyboard users.
