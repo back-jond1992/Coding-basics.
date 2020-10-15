@@ -1,4 +1,4 @@
-## CSS
+# CSS
 
 Text color is changed by changing the 'style' of elements. The property responsible for colour is the 'color' style property. For example <h1 style="color: pink;">Korean Cooking Recipes,/h1>.
 

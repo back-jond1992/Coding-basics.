@@ -1,4 +1,4 @@
-## Applied Visual Design.
+# Applied Visual Design.
 
 -CSS property 'text-align' aligns text:
     .'justify'- causes all text except for last line to meet the right and left edges.

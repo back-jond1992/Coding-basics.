@@ -1,4 +1,4 @@
-## Applied Accessability.
+# Applied Accessability.
 
 Applied accessability ensures web content can be understood by all, regardless of disabilities or resources. A great resource for projects going forward is the W3 Consortium's Web Content Accessibility Guidelines (WCAG). 
 

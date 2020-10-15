@@ -12,3 +12,5 @@
     .transitions
     
 -Pixel (px) type of length unit, which tell the browser how to size or space an item.
+
+-User Interface (UI): the means by which the user and a computer system interact, in particular the use of input devices and software.
