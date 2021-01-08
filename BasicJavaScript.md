@@ -29,3 +29,21 @@ var myName = 9
 -Decimal numbers can also be used as variables too.
 
 -'%' (the remainder operator) gives the remainder of the division of two numbers.
+
+-'+=' assigns a number to a variable and performs a mathematical operation at the same time.
+
+- '-=' performs the same function but subtracts a number from a variable.
+
+-'*=' multiplies and '/=' divides.
+
+-A series of zeros or characters in quotation marks("") are called a 'string'. A string must start and end with " or '. In JavaScript, you can escape a quote from considering it as an end of string quote by placing a backslash (\) in front of the quote.
+
+Code	Output
+\'	single quote
+\"	double quote
+\\	backslash
+\n	newline
+\r	carriage return
+\t	tab
+\b	word boundary
+\f	form feed
