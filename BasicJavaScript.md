@@ -47,3 +47,9 @@ Code	Output
 \t	tab
 \b	word boundary
 \f	form feed
+
+-In JavaScript you can concatenate (or link) strings together using '+'
+
+-'+=' operator will concatenate a string a string onto the end of an existing string.
+
+-You can find the length of a String value by writing .length after the string variable or string literal.
