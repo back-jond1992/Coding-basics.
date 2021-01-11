@@ -53,3 +53,9 @@ Code	Output
 -'+=' operator will concatenate a string a string onto the end of an existing string.
 
 -You can find the length of a String value by writing .length after the string variable or string literal.
+
+-Bracket notation is a way to get a character at a specific index within a string. For example index 4 of the word Jack would the character K. (note most modern programming languages start counting from 0).
+
+-In JavaScript, String values are immutable, which means that they cannot be altered once created.
+
+-In order to get the last letter of a string, you can subtract one from the string's length. For example [.length - 1]. This principle can be be used the second to last[.length - 2], third to last [.length - 3] and so on.
