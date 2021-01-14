@@ -65,3 +65,13 @@ Code	Output
 -Array data can data can be accessed using indexes ([ ]). 
 
 -Unlike strings, arrays can be changed freely.
+
+-The push function '.push()' allows you to append data to the end of an array. It takes one or more parameters and pushes them on to the end of an array.
+
+-'.unshift()' performs the same function except it adds elements to the front the array rather than the end. 
+
+-'.pop()' is used to remove a value from the end of an array. We can store the "popped off" value by assigning it to a variable.
+
+-'.shift()' performs the same function. However rather than removing the last element of an array it removes the first.
+
+-In JavaScript, we can divide up our code into reusable parts called functions. You can call or invoke this function by using its name followed by parentheses. All of the code between the curly braces will be executed every time the function is called.
