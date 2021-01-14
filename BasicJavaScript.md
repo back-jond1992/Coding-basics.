@@ -59,3 +59,9 @@ Code	Output
 -In JavaScript, String values are immutable, which means that they cannot be altered once created.
 
 -In order to get the last letter of a string, you can subtract one from the string's length. For example [.length - 1]. This principle can be be used the second to last[.length - 2], third to last [.length - 3] and so on.
+
+-Array variables allow you to store multiple pieces of data in one place. Array variables start and end with '[  ]'. (**You can also have an array within an array. '[ [  ], [  ] ]').
+
+-Array data can data can be accessed using indexes ([ ]). 
+
+-Unlike strings, arrays can be changed freely.
