@@ -75,3 +75,14 @@ Code	Output
 -'.shift()' performs the same function. However rather than removing the last element of an array it removes the first.
 
 -In JavaScript, we can divide up our code into reusable parts called functions. You can call or invoke this function by using its name followed by parentheses. All of the code between the curly braces will be executed every time the function is called.
+
+-Parameters are variables that act as placeholders for values top be input into functions. When a function is defined it usually has one or two parameters. The values which are input into two a function are claeed arguments. For example:
+        function testFun(param1, param2) {
+        console.log(param1, param2);
+        }
+        testFun: testFun("Hello", "World");
+
+-Scope is the visibility of variables in JavaScript. Global scope refers to variables that are defined outside of a function block and can be seen everywhere. Variables without the 'var' keyword automatically have global scope and can therefore have consequences in other parts of your code. (***You should always declare variables with 'var'). Variables declared within a function have local scope and are only visible within that function. It is also possible to have local and global variables with the same name, but the local variable will take precedence over the global.
+
+-You can use a 'return' statement to send a value back out of a function.
+
