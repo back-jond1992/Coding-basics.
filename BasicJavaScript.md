@@ -86,3 +86,10 @@ Code	Output
 
 -You can use a 'return' statement to send a value back out of a function.
 
+-A function can use the 'return' statement but doesn't have to. When it doesn't the function processes the inner code but the returned value is undefined. 'addsum' is a function without a return statement and will change the global sum variable but the returned value of the function is undefined.
+
+-A queue is an abstract data structure when items are kept in order. New items are added at the back of the queue and old ones removed from the front.
+
+-Booleans are another data type. They are only 2 values 'true'(on) or 'false'(off). They are never written with quotes.
+
+-'if' statements are used to make decisions in code. The keyword 'if' tells the JavaScript to execute the code in the curly braces under certain conditions which are defined in the parentheses. These conditions are Booleans and they can only be true or false. When the condition is true the code inside the curly braces will be executed and if false it will not.
