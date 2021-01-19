@@ -93,3 +93,25 @@ Code	Output
 -Booleans are another data type. They are only 2 values 'true'(on) or 'false'(off). They are never written with quotes.
 
 -'if' statements are used to make decisions in code. The keyword 'if' tells the JavaScript to execute the code in the curly braces under certain conditions which are defined in the parentheses. These conditions are Booleans and they can only be true or false. When the condition is true the code inside the curly braces will be executed and if false it will not.
+
+-All comparison operators in JavaScript return Boolean values.
+
+-The most comparison operator is '=='(the equality operator). It compares two values and returns true if they are equivalent or false if they are not. 
+
+-The strict equality operator ('===') performs the same function but will not convert both values being compared to a common function. If the values being compared are different types, they are considered unequal.
+
+-In Javascript you can determine a value type with the 'typeof' operator.
+
+-'!='(the inequality operator) is the opposite of the equality operator. It means not equal and returns false when values are equal and true when unequal. Like the equality operator it will convert data types.
+
+-The strict inequality operator ('!==') performs the same function as the strict equality operator and will also not convert data types.
+
+-The greater than operator ('>') also compares values of two numbers. If the number to the left of the greater than operator is greater than the value to the right it will return true and false if not. '>' will convert data types whilst comparing.
+
+-The greater than or equal to operator ('>=') also compares values of two numbers. If the number to the left of the greater than or equal to operator is greater than or equal to the value to the right it will return true and false if not. '>=' will convert data types whilst comparing.
+
+-The less than operator ('<') also compares values of two numbers. If the number to the left of the less than operator is less than the value to the right it will return true and false if not. '<' will convert data types whilst comparing.
+
+-The less than or equal to operator ('<=') also compares values of two numbers. If the number to the left of the less than or equal to operator is less than or equal to the value to the right it will return true and false if not. '<=' will convert data types whilst comparing.
+
+-Sometimes you will need to test more than one thing at a time. The logical and operator ('&&') returns true if and only if the operands to the left and right of it are true.
