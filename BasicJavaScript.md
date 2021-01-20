@@ -114,4 +114,8 @@ Code	Output
 
 -The less than or equal to operator ('<=') also compares values of two numbers. If the number to the left of the less than or equal to operator is less than or equal to the value to the right it will return true and false if not. '<=' will convert data types whilst comparing.
 
--Sometimes you will need to test more than one thing at a time. The logical and operator ('&&') returns true if and only if the operands to the left and right of it are true.
+-Sometimes you will need to test more than one thing at a time. The logical AND operator ('&&') returns true if and only if the operands to the left and right of it are true.
+
+-The logical OR operator ('||') returns true if either of the operands are true, otherwise false.
+
+-When the condition for an if statement is true the code inside the curly braces is executed but if false nothing would happen. Using an 'else' statement an alternate block of code can be executed.
