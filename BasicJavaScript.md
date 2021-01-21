@@ -119,3 +119,5 @@ Code	Output
 -The logical OR operator ('||') returns true if either of the operands are true, otherwise false.
 
 -When the condition for an if statement is true the code inside the curly braces is executed but if false nothing would happen. Using an 'else' statement an alternate block of code can be executed.
+
+-'else if' statements chain if statements together to address multiple conditions. Order is important and the function is executed from top to bottom.
