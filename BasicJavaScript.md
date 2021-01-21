@@ -121,3 +121,9 @@ Code	Output
 -When the condition for an if statement is true the code inside the curly braces is executed but if false nothing would happen. Using an 'else' statement an alternate block of code can be executed.
 
 -'else if' statements chain if statements together to address multiple conditions. Order is important and the function is executed from top to bottom.
+
+-'switch' statements test values and can have many 'case' statements which define various possible values. 'case' vales are tested with a strict equality ('==='). A 'break' statement tell JavaScript to stop executing statements. If it is not possible to specify all the possible values as case statements you can add a 'default' statement, which will be executed if no matching case statements are found (like the final 'else' statement in a if/statement).
+
+-If the 'break' statement is omitted from a 'switch' statements case the following 'case' statements will be executed.
+
+-When a 'return' statement is reached, the execution of the current function stops and control returns to the calling location.
