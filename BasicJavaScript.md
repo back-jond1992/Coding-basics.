@@ -139,3 +139,9 @@ Code	Output
 -Bracket notations can also be used to access a property which is stored as the value of a variable.
 
 -After you've created a JavaScript object, you can update its properties at any time just like you would update any other variable. You can use either dot or bracket notation to update.
+
+-You can also add new properties to existing objects with either dot or bracket notations.
+
+-You can also remove properties using 'delete'.
+
+-Sometimes it is useful to check if the property of a given object exists or not. We can use the '.hasOwnProperty(propname)' method of objects to determine if that object has the given property name. '.hasOwnProperty()' returns true or false if the property is found or not.
