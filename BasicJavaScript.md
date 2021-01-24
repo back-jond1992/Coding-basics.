@@ -127,3 +127,15 @@ Code	Output
 -If the 'break' statement is omitted from a 'switch' statements case the following 'case' statements will be executed.
 
 -When a 'return' statement is reached, the execution of the current function stops and control returns to the calling location.
+
+-'objects' are similar to arrays, however you access data in objects through 'properties'. Objects are useful for storing data in a structured way.
+
+-There are two ways to access te properties of an object. '.' (dot notation) and '[ ]' (bracket notation). 
+
+-Dot notation is what is used when you know the know the name of the property you want access ahead of time.
+
+-If the property of the object you want to access has a space in its name you need to use the bracket notation, although you can still use bracket notations even if there is no space in the name.
+
+-Bracket notations can also be used to access a property which is stored as the value of a variable.
+
+-After you've created a JavaScript object, you can update its properties at any time just like you would update any other variable. You can use either dot or bracket notation to update.
