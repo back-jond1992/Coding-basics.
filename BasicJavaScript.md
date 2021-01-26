@@ -149,3 +149,8 @@ Code	Output
 -The sub-properties of objects can be accessed by chaining together the dot or bracket notation.
 
 -Similar to accessing nested objects, Array bracket notation can be chained to access nested arrays.
+
+-The same code can be used multiple times using a loop. 
+
+-A 'while' loop runs whilst a specified condition is true and stops once that condition is no longer true.
+
