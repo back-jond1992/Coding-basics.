@@ -154,3 +154,12 @@ Code	Output
 
 -A 'while' loop runs whilst a specified condition is true and stops once that condition is no longer true.
 
+-The most common loop is a 'for' loop. It runs for a specific number of times. 'for' loops are declared with three optional expressions separated with semicolons. 'for ([initialization]; [condition]; [final-expression])'.
+
+-The initialization statement is executed only the once before the loop starts and is usually used to define and set up a loop variable.
+
+-The condition statement is evaluated at the beginning of every loop and continues so long as it continues to evaluate true. When the condition is false the loop will stop executing. So if it starts false it will never execute.
+
+-The final-expression condition is executed at the end before the next condition and is used to increment of decrement your loop counter.
+
+-A 'for' loop can also count backwards, by changing the initialization and the final-expression.
