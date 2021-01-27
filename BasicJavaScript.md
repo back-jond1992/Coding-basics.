@@ -163,3 +163,23 @@ Code	Output
 -The final-expression condition is executed at the end before the next condition and is used to increment of decrement your loop counter.
 
 -A 'for' loop can also count backwards, by changing the initialization and the final-expression.
+
+-The 'do/while' loop will first 'do' one pass of the code inside the loop no matter what, then will continue the loop 'while' the condition remains true.
+
+-Random numbers are useful for creating random behavior. 'Math.random( )' function generates a random decimal number between 0 (inclusive of) and not quite 1 (exclusive of).
+
+-To generate a random whole number:
+1.Use 'Math.random()' to generate a random decimal.
+2.Multiply that random decimal by 20.
+3.Use another function, 'Math.floor()' to round the number down to its nearest whole number.
+'Math.random()' can never quite return a 1 and, because we're rounding down, it's impossible to actually get 20. This technique will give us a whole number between 0 and 19.
+
+-We can also generate a random whole number which falls within a range of two specified numbers using 'min' and 'max'.
+
+-'parseInt( )' function parses a string and returns a integer (whole number).
+
+-The conditional operator, also called the ternary operator, can be used as a one line if-else expression.
+
+The syntax is:
+
+'condition ? expression-if-true : expression-if-false;'
