@@ -1,0 +1,49 @@
+-Small amounts of JavaScript can be added to a index.html file or can be 
+added in a link tag (sandbox.js). File is linked using: <script scr="sandbox.js>
+</script>.
+
+-console.log logs JavaScript from our file to the console.
+
+-'let' keyword creates a variable, same as 'var' keyword.
+
+-'const' also creates a variable, however it cannot be changed, it is constant.
+Any attempt to change the variable will result in an error message.
+
+-'//' allow you to single line comment in JavaScript. '/* /*' allows you to mult-line
+comment.
+
+-7 data types: number (1, 2, 50, 3.79), string ('', ""), boolean (true/false), null
+(explicitly set with no value), undefined (for variables with no value set yet), object
+(complex data structures), symbol (used with objects).
+
+
+Strings: 
+
+-Strings are series of letters, characters or numbers inside quotation marcs. '.__' (.
+notions) get the properties of stings, for example: '.length' gets the length of a string.
+They also have methods which are similar to functions. These are denoted and called
+using parentheses '()'.
+
+
+-'+' adds strings together.
+
+-'[]' can get a single character from a string.
+
+-The '.indexOf(). method returns the first index at which a given element can be found in the array, or -1 if it is not present.
+
+-The 'slice(), method returns a shallow copy of a portion of an array into a new array object selected from start to end (end not included) where start and end represent the index of items in that array. The original array will not be modified.
+
+-The 'substr()' method extracts parts of a string, beginning at the character at the specified position, and returns the specified number of characters.
+
+-The 'replace()' method searches a string for a specified value, or a regular expression, and returns a new string where the specified values are replaced.
+
+
+Numbers:
+
+-Math operators: +, -. *, /, **, %.
+
+-Order of operation = B (brackets), I (indexes), D (division), M (multiplication), A (addition), S (subtraction).
+
+-'++' '--' adds 1 and minuses 1 respectively. '+=', '-+', '*=', '/=' takes the value and adds, minuses, times or divides by the specified number. (Shorthand notation).
+
+-'Nan' = not a number.
