@@ -1,3 +1,5 @@
+# JavaScript
+
 -Small amounts of JavaScript can be added to a index.html file or can be 
 added in a link tag (sandbox.js). File is linked using: <script scr="sandbox.js>
 </script>.
@@ -17,7 +19,7 @@ comment.
 (complex data structures), symbol (used with objects).
 
 
-Strings: 
+## Strings: 
 
 -Strings are series of letters, characters or numbers inside quotation marcs. '.__' (.
 notions) get the properties of stings, for example: '.length' gets the length of a string.
@@ -38,7 +40,7 @@ using parentheses '()'.
 -The 'replace()' method searches a string for a specified value, or a regular expression, and returns a new string where the specified values are replaced.
 
 
-Numbers:
+## Numbers:
 
 -Math operators: +, -. *, /, **, %.
 
@@ -47,3 +49,29 @@ Numbers:
 -'++' '--' adds 1 and minuses 1 respectively. '+=', '-+', '*=', '/=' takes the value and adds, minuses, times or divides by the specified number. (Shorthand notation).
 
 -'Nan' = not a number.
+
+## Templates Strings/String Literals:
+
+-Template literals are enclosed by the backtick (` `) character instead of double or single quotes.
+
+-Template literals can contain placeholders. These are indicated by the dollar sign and curly braces (${expression}). The expressions in the placeholders and the text between the backticks (` `) get passed to a function.
+
+## Arrays:
+
+- An array is a special variable, which can hold more than one value at a time.
+
+-Arrays are created using '[ ]' square brackets.
+
+-You access an array element by referring to the index number.
+
+-Arrays have various methods, for example: '.join', '.pop', '.push'.
+
+## Null/Undefined:
+
+-Undefined means a variable declared, but no value has been assigned a value.
+
+-Whereas, null in JavaScript is an assignment value. You can assign it to a variable.
+
+## Booleans:
+
+-A JavaScript Boolean represents one of two values: true or false.
