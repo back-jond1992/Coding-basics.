@@ -71,3 +71,21 @@ Calculate the product of two numbers, and return the result:
     function myFunction(a, b) { 
         return a * b;             // Function returns the product of a and b
     }
+
+## Arrow Function
+
+-Arrow functions were introduced in ES6.
+
+-Arrow functions allow us to write shorter function syntax:
+
+-Before:
+        hello = function() {
+            return "Hello World!";
+        }
+
+-With Arrow Function:
+
+        hello = () => {
+            return "Hello World!";
+        }
+
