@@ -38,7 +38,7 @@
 
 -In other words: The HTML DOM is a standard for how to get, change, add, or delete HTML elements.
 
-## QuerySelector 
+## querySelector 
 
 -The querySelector() method returns the first element that matches a specified CSS selector(s) in the document.
 
@@ -46,3 +46,28 @@
 
 -If the selector matches an ID in document that is used several times (Note that an "id" should be unique within a page and should not be used more than once), it returns the first matching element.
 
+## innerText
+
+-The innerText property can be used to write the dynamic text on the html document. Here, text will not be interpreted as html text but a normal text.
+
+-It is used mostly in the web pages to generate the dynamic content such as writing the validation message, password strength etc.
+
+-Syntax:
+
+Return the text content of a node:
+        node.innerText
+
+Set the text content of a node:
+        node.innerText = text
+
+## innerHTML
+
+-The innerHTML property sets or returns the HTML content (inner HTML) of an element.
+
+Syntax:
+
+Return the innerHTML property:
+        HTMLElementObject.innerHTML
+
+Set the innerHTML property:
+        HTMLElementObject.innerHTML = text
