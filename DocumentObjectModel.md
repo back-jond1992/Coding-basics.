@@ -71,3 +71,36 @@ Return the innerHTML property:
 
 Set the innerHTML property:
         HTMLElementObject.innerHTML = text
+
+## setAttriute
+
+-The setAttribute() method adds the specified attribute to an element, and gives it the specified value.
+
+-If the specified attribute already exists, only the value is set/changed.
+
+-Note: Although it is possible to add the style attribute with a value to an element with this method, it is recommended that you use properties of the Style object instead for inline styling, because this will not overwrite other CSS properties that may be specified in the style attribute:
+
+-Bad:
+        element.setAttribute("style", "background-color: red;");
+
+-Good:
+        element.style.backgroundColor = "red";
+
+-Example: add the class attribute with the value of "democlass" to a <h1> element:
+
+        document.getElementsByTagName("H1")[0].setAttribute("class", "democlass");
+
+## Style Property
+
+-The style property returns a CSSStyleDeclaration object, which represents an element's style attribute.
+
+-The style property is used to get or set a specific style of an element using different CSS properties.
+
+***Note: It is not possible to set styles by assigning a string to the style property, e.g. element.style = "color: red;". To set the style of an element, append a "CSS" property to style and specify a value, like this:
+        element.style.backgroundColor = "red";   // set the background color of an element to red
+
+-As you can see, the JavaScript syntax for setting CSS properties is slightly different than CSS (backgroundColor instead of background-color).
+
+-Example: add a red color to an <h1> element:
+
+        document.getElementById("myH1").style.color = "red";
