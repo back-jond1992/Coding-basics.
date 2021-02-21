@@ -104,3 +104,15 @@ Set the innerHTML property:
 -Example: add a red color to an <h1> element:
 
         document.getElementById("myH1").style.color = "red";
+
+## classList Property.
+
+-Example: add the "mystyle" class to a <div> element:
+
+        document.getElementById("myDIV").classList.add("mystyle");
+
+-The classList property returns the class name(s) of an element, as a DOMTokenList object.
+
+-This property is useful to add, remove and toggle CSS classes on an element.
+
+-The classList property is read-only, however, you can modify it by using the add() and remove() methods.
