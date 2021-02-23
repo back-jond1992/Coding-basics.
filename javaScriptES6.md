@@ -147,3 +147,103 @@ This code will still return the string value by default.
 -And here's how you can assign an object properties' values to variables with different names:
 
     const { johnDoe: { age: userAge, email: userEmail }} = user;
+
+## Destructing Arrays
+
+-ES6 makes destructuring arrays as easy as destructuring objects.
+
+-One key difference between the spread operator and array destructuring is that the spread operator unpacks all contents of an array into a comma-separated list. Consequently, you cannot pick or choose which elements you want to assign to variables.
+
+-Destructuring an array lets us do exactly that:
+
+    const [a, b] = [1, 2, 3, 4, 5, 6];
+    console.log(a, b); // 1, 2
+
+-The variable a is assigned the first value of the array, and b is assigned the second value of the array. We can also access the value at any index in an array with destructuring by using commas to reach the desired index:
+
+    const [a, b,,, c] = [1, 2, 3, 4, 5, 6];
+    console.log(a, b, c); // 1, 2, 5
+
+-In some situations involving array destructuring, we might want to collect the rest of the elements into a separate array.
+
+-The result is similar to Array.prototype.slice(), as shown below:
+
+    const [a, b, ...arr] = [1, 2, 3, 4, 5, 7];
+    console.log(a, b); // 1, 2
+    console.log(arr); // [3, 4, 5, 7]
+
+-Variables a and b take the first and second values from the array. After that, because of the rest parameter's presence, arr gets the rest of the values in the form of an array. The rest element only works correctly as the last variable in the list. As in, you cannot use the rest parameter to catch a subarray that leaves out the last element of the original array.
+
+## Destructuring Assignment to Pass an Object as a Function's Parameters
+
+-In some cases, you can destructure the object in a function argument itself.
+
+    const profileUpdate = (profileData) => {
+        const { name, age, nationality, location } = profileData;
+        // do something with these variables
+    }
+
+-This effectively destructures the object sent into the function. This can also be done in-place:
+
+    const profileUpdate = ({ name, age, nationality,    location }) => {
+        /* do something with these fields */
+    }
+
+-When profileData is passed to the above function, the values are destructured from the function parameter for use within the function.
+
+## Create Strings using Template Literals
+
+-A new feature of ES6 is the template literal. This is a special type of string that makes creating complex strings easier.
+
+-Template literals allow you to create multi-line strings and to use string interpolation features to create strings.
+
+    const person = {
+        name: "Zodiac Hasbro",
+        age: 56
+    };
+
+    // Template literal with multi-line and string interpolation
+    const greeting = `Hello, my name is ${person.name}!
+    I am ${person.age} years old.`;
+
+    console.log(greeting); // prints
+    // Hello, my name is Zodiac Hasbro!
+    // I am 56 years old.
+
+-A lot of things happened there. Firstly, the example uses backticks (`), not quotes (' or "), to wrap the string. Secondly, notice that the string is multi-line, both in the code and the output. This saves inserting \n within strings. The ${variable} syntax used above is a placeholder. Basically, you won't have to use concatenation with the + operator anymore. To add variables to strings, you just drop the variable in a template string and wrap it with ${ and }. Similarly, you can include other expressions in your string literal, for example ${a + b}. This new way of creating strings gives you more flexibility to create robust strings.
+
+## Object Literal Declarations Using Object Property Shorthand
+
+-ES6 adds some nice support for easily defining object literals.
+
+    const getMousePosition = (x, y) => ({
+        x: x,
+        y: y
+    });
+
+-getMousePosition is a simple function that returns an object containing two properties. ES6 provides the syntactic sugar to eliminate the redundancy of having to write x: x. You can simply write x once, and it will be converted to x: x (or something equivalent) under the hood. 
+
+-Here is the same function from above rewritten to use this new syntax:
+
+    const getMousePosition = (x, y) => ({ x, y });
+
+## Declarative Functions
+
+-When defining functions within objects in ES5, we have to use the keyword function as follows:
+
+    const person = {
+        name: "Taylor",
+        sayHello: function() {
+            return `Hello! My name is ${this.name}.`;
+        }
+    };
+
+- With ES6, You can remove the function keyword and colon altogether when defining functions in objects. Here's an example of this syntax:
+
+    const person = {
+        name: "Taylor",
+        sayHello() {
+            return `Hello! My name is ${this.name}.`;
+        }
+    };
+
