@@ -94,3 +94,127 @@
     bagStr.match(bgRegex); // Returns ["bag"]
     bugStr.match(bgRegex); // Returns ["bug"]
     bogStr.match(bgRegex); // Returns null
+
+## Match Letters of the Alphabet
+
+-Inside a character set, you can define a range of characters to match using a hyphen character: -.
+
+-For example, to match lowercase letters a through e you would use [a-e].
+
+    let catStr = "cat";
+    let batStr = "bat";
+    let matStr = "mat";
+    let bgRegex = /[a-e]at/;
+    catStr.match(bgRegex); // Returns ["cat"]
+    batStr.match(bgRegex); // Returns ["bat"]
+    matStr.match(bgRegex); // Returns null
+
+## Match Number and Letters
+
+-Using the hyphen (-) to match a range of characters is not limited to letters. It also works to match a range of numbers.
+
+-For example, /[0-5]/ matches any number between 0 and 5, including the 0 and 5.
+
+-Also, it is possible to combine a range of letters and numbers in a single character set.
+
+    let jennyStr = "Jenny8675309";
+    let myRegex = /[a-z0-9]/ig;
+    // matches all letters and numbers in jennyStr
+    jennyStr.match(myRegex);
+
+## Match Single Characters Not Specified
+
+-You could also create a set of characters that you do not want to match. These types of character sets are called negated character sets.
+
+-To create a negated character set, you place a caret character (^) after the opening bracket and before the characters you do not want to match.
+
+-For example, /[^aeiou]/gi matches all characters that are not a vowel. Note that characters like ., !, [, @, / and white space are matched - the negated vowel character set only excludes the vowel characters.
+
+## Match Characters that Occur One or More Times
+
+-Sometimes, you need to match a character (or group of characters) that appears one or more times in a row. This means it occurs at least once, and may be repeated.
+
+-You can use the + character to check if that is the case. Remember, the character or pattern has to be present consecutively. That is, the character has to repeat one after the other.
+
+-For example, /a+/g would find one match in "abc" and return ["a"]. Because of the +, it would also find a single match in "aabc" and return ["aa"].
+
+=If it were instead checking the string "abab", it would find two matches and return ["a", "a"] because the a characters are not in a row - there is a b between them. Finally, since there is no "a" in the string "bcd", it wouldn't find a match.
+
+## Match Characters that Occur Zero or More Times
+
+-There's also an option that matches characters that occur zero or more times.
+
+-The character to do this is the asterisk or star: *.
+
+    let soccerWord = "gooooooooal!";
+    let gPhrase = "gut feeling";
+    let oPhrase = "over the moon";
+    let goRegex = /go*/;
+    soccerWord.match(goRegex); // Returns ["goooooooo"]
+    gPhrase.match(goRegex); // Returns ["g"]
+    oPhrase.match(goRegex); // Returns null
+
+##
+
+-In regular expressions, a greedy match finds the longest possible part of a string that fits the regex pattern and returns it as a match. The alternative is called a lazy match, which finds the smallest possible part of the string that satisfies the regex pattern.
+
+-You can apply the regex /t[a-z]*i/ to the string "titanic". This regex is basically a pattern that starts with t, ends with i, and has some letters in between.
+
+-Regular expressions are by default greedy, so the match would return ["titani"]. It finds the largest sub-string possible to fit the pattern.
+
+-However, you can use the ? character to change it to lazy matching. "titanic" matched against the adjusted regex of /t[a-z]*?i/ returns ["ti"].
+
+***Note - Parsing HTML with regular expressions should be avoided, but pattern matching an HTML string with regular expressions is completely fine.
+
+## Match Beginning String Patterns
+
+-In an earlier challenge, you used the caret character (^) inside a character set to create a negated character set in the form [^thingsThatWillNotBeMatched]. Outside of a character set, the caret is used to search for patterns at the beginning of strings.
+
+    let firstString = "Ricky is first and can be found.";
+    let firstRegex = /^Ricky/;
+    firstRegex.test(firstString);
+    // Returns true
+    let notFirst = "You can't find Ricky now.";
+    firstRegex.test(notFirst);
+    // Returns false
+
+## Match Ending String Patterns
+
+-You can search the end of strings using the dollar sign character $ at the end of the regex.
+
+    let theEnding = "This is a never ending story";
+    let storyRegex = /story$/;
+    storyRegex.test(theEnding);
+    // Returns true
+    let noEnding = "Sometimes a story will have to end";
+    storyRegex.test(noEnding);
+    // Returns false
+
+## Match All Letters and Numbers
+
+The closest character class in JavaScript to match the alphabet is \w. This shortcut is equal to [A-Za-z0-9_]. This character class matches upper and lowercase letters plus numbers. Note, this character class also includes the underscore character (_).
+
+    let longHand = /[A-Za-z0-9_]+/;
+    let shortHand = /\w+/;
+    let numbers = "42";
+    let varNames = "important_var";
+    longHand.test(numbers); // Returns true
+    shortHand.test(numbers); // Returns true
+    longHand.test(varNames); // Returns true
+    shortHand.test(varNames); // Returns true
+    These shortcut character classes are also known as shorthand character classes.
+
+## Match Everything But Letters and Numbers
+
+-You can search for the opposite of the \w with \W. Note, the opposite pattern uses a capital letter. This shortcut is the same as [^A-Za-z0-9_].
+
+    let shortHand = /\W/;
+    let numbers = "42%";
+    let sentence = "Coding!";
+    numbers.match(shortHand); // Returns ["%"]
+    sentence.match(shortHand); // Returns ["!"]
+
+## Match All Numbers
+
+-The shortcut to look for digit characters is \d, with a lowercase d. This is equal to the character class [0-9], which looks for a single character of any number between zero and nine.
+
