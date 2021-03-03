@@ -311,3 +311,18 @@ The closest character class in JavaScript to match the alphabet is \w. This shor
     let password = "abc123";
     let checkPass = /(?=\w{3,6})(?=\D*\d)/;
     checkPass.test(password); // Returns true
+
+## Check For Mixed Grouping of Characters
+
+-Sometimes we want to check for groups of characters using a Regular Expression and to achieve that we use parentheses ().
+
+-If you want to find either Penguin or Pumpkin in a string, you can use the following Regular Expression: /P(engu|umpk)in/g
+
+-Then check whether the desired string groups are in the test string by using the test() method.
+
+    let testStr = "Pumpkin";
+    let testRegex = /P(engu|umpk)in/;
+    testRegex.test(testStr);
+    // Returns true
+
+## Reuse Patterns Using Capture Groups
