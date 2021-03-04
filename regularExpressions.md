@@ -326,3 +326,33 @@ The closest character class in JavaScript to match the alphabet is \w. This shor
     // Returns true
 
 ## Reuse Patterns Using Capture Groups
+
+-You can search for repeat substrings using capture groups. Parentheses, ( and ), are used to find repeat substrings. You put the regex of the pattern that will repeat in between the parentheses.
+
+-To specify where that repeat string will appear, you use a backslash (\) and then a number. This number starts at 1 and increases with each additional capture group you use. An example would be \1 to match the first group.
+
+-The example below matches any word that occurs twice separated by a space:
+
+    let repeatStr = "regex regex";
+    let repeatRegex = /(\w+)\s\1/;
+    repeatRegex.test(repeatStr);
+    repeatStr.match(repeatRegex);
+    The test call would return true, and the match call would return ["regex regex", "regex"].
+
+-Using the .match() method on a string will return an array with the string it matches, along with its capture group.
+
+## Capture Groups to Search and Replace
+
+-You can search and replace text in a string using .replace() on a string. The inputs for .replace() is first the regex pattern you want to search for. The second parameter is the string to replace the match or a function to do something.
+
+    let wrongText = "The sky is silver.";
+    let silverRegex = /silver/;
+    wrongText.replace(silverRegex, "blue");
+    
+-The replace call would return the string The sky is blue..
+
+-You can also access capture groups in the replacement string with dollar signs ($).
+
+    "Code Camp".replace(/(\w+)\s(\w+)/, '$2 $1');
+    
+The replace call would return the string Camp Code.
