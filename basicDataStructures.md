@@ -251,3 +251,37 @@ Now it logs deeper still.
     let inventory = foods[selectedFood];
 
 -This code will evaluate the value stored in the selectedFood variable and return the value of that key in the foods object, or undefined if it is not present. Bracket notation is very useful because sometimes object properties are not known before runtime or we need to access them in a more dynamic way.
+
+## Delete Key Word
+
+-Let's revisit our foods object example one last time. If we wanted to remove the apples key, we can remove it by using the delete keyword like this:
+
+    delete foods.apples;
+
+## Check if an Object has a Property
+
+-JavaScript provides us with two different to check if an object has a property. One uses the hasOwnProperty() method and the other uses the in keyword. If we have an object users with a property of Alan, we could check for its presence in either of the following ways:
+
+    users.hasOwnProperty('Alan');
+    'Alan' in users;
+
+-Both of these would return true.
+
+## Iterate Through the Keys of an Object with a for...in Statement
+
+-Sometimes you may need to iterate through all the keys within an object. This requires a specific syntax in JavaScript called a for...in statement. For our users object, this could look like:
+
+    for (let user in users) {
+    console.log(user);
+    }
+
+-This would log Alan, Jeff, Sarah, and Ryan - each value on its own line.
+
+-In this statement, we defined a variable user, and as you can see, this variable was reset during each iteration to each of the object's keys as the statement looped through the object, resulting in each user's name being printed to the console.
+
+***NOTE: Objects do not maintain an ordering to stored keys like arrays do; thus a key's position on an object, or the relative order in which it appears, is irrelevant when referencing or accessing that key.
+
+## Object.keys()
+
+-We can also generate an array which contains all the keys stored in an object using the Object.keys() method and passing in an object as the argument. This will return an array with strings representing each property in the object. Again, there will be no specific order to the entries in the array.
+
